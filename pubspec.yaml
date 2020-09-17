@@ -1,0 +1,26 @@
+name: unicons
+description: 1000+ Pixel-perfect vector icons and Iconfont for your next project.
+# author: Pedro Lemos <lemozxpedro@gmail.com>
+homepage: https://github.com/pedrolemoz/unicons-flutter
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Unicons
+      fonts:
+      - asset:  icons/UniconsLine.ttf
