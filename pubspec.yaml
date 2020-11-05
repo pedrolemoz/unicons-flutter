@@ -3,7 +3,7 @@ description: 1000+ Pixel-perfect vector icons and Iconfont for your next project
 # author: Pedro Lemos <lemozxpedro@gmail.com>
 homepage: https://github.com/pedrolemoz/unicons-flutter
 
-version: 1.0.0+2
+version: 1.0.0+3
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
