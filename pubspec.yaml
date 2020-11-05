@@ -18,3 +18,7 @@ flutter:
     - family: UniconsLine
       fonts:
       - asset:  icons/UniconsLine.ttf
+    
+    - family: UniconsSolid
+      fonts:
+      - asset:  icons/UniconsSolid.ttf

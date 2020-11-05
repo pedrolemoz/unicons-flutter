@@ -1,8 +1,12 @@
 # Unicons
 
-A Flutter library for using [Unicons](https://iconscout.com/unicons).
+<div>
+  <img src="https://i.imgur.com/pwnKyk3.png" width=350px>
+</div>
 
-**Note:** All of the icon data is auto-generated based on the latest release of [Unicons](https://github.com/Iconscout/unicons).
+A Flutter library for [Unicons](https://iconscout.com/unicons).
+
+**Note:** All icon data is auto-generated based on the latest release of [Unicons](https://github.com/Iconscout/unicons).
 
 ## Installation
 
@@ -10,12 +14,13 @@ Add the dependency to your `pubspec.yaml`
 
 ```yaml
 dependencies:
-  unicons: 1.0.x # Use the latest version
+  unicons: # Keep this blank to use the latest version
 ```
 
 ## Usage
 
 The library exposes all of the [Unicons](https://iconscout.com/unicons) as `IconData`.
+If you want to use [Line icons](https://iconscout.com/unicons/explore/line), use `UniconsLine` class, but if you want to use [Solid icons](https://iconscout.com/unicons/explore/solid), use `UniconsSolid` instead.
 
 ```dart
 import 'package:flutter/material.dart';
@@ -23,9 +28,20 @@ import 'package:unicons/unicons.dart';
 
 class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
-    return Icon(
-      icon: Icon(UniconsLine.camera)
-     );
+    return Container(
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Icon(UniconsLine.camera),
+          Icon(UniconsLine.baseball_ball),
+          Icon(UniconsSolid.airplay),
+          Icon(UniconsSolid.battery_empty),
+        ],
+      ),
+    );
   }
 }
 ```
