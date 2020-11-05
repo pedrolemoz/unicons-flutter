@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show IconData;
 
 class UniconsLine {
   UniconsLine._();
 
   static final _kFontFam = 'UniconsLine';
-  static final _kFontPkg = null;
+  static final _kFontPkg = 'unicons';
 
   static final asterisk =
       IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
