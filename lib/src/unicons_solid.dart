@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart' show IconData;
 
+/// This class has the solid version of the icons
 class UniconsSolid {
   UniconsSolid._();
 

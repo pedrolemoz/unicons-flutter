@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart' show IconData;
 
+/// This class has the line version of the icons
 class UniconsLine {
   UniconsLine._();
 

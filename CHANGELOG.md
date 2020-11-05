@@ -1,3 +1,7 @@
+# 1.0.0+4
+
+- Minor changes
+
 # 1.0.0+3
 
 - Added Solid icons and an example app

@@ -8,6 +8,12 @@ A Flutter library for [Unicons](https://iconscout.com/unicons).
 
 **Note:** All icon data is auto-generated based on the latest release of [Unicons](https://github.com/Iconscout/unicons).
 
+[![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://pub.dev/packages/effective_dart)
+![GitHub repo size](https://img.shields.io/github/repo-size/pedrolemoz/unicons-flutter?color=40c4ff)
+[![Project Owner](https://img.shields.io/badge/owner-Pedro%20Lemos-40c4ff)](https://github.com/pedrolemoz/)
+![GitHub stars](https://img.shields.io/github/stars/pedrolemoz/unicons-flutter?style=social)
+[![GitHub forks](https://img.shields.io/github/forks/pedrolemoz/cpf_util?style=social)](https://github.com/pedrolemoz/unicons-flutter/fork)
+
 ## Installation
 
 Add the dependency to your `pubspec.yaml`

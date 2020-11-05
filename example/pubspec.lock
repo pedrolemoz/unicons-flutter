@@ -45,7 +45,7 @@ packages:
       name: unicons
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0+2"
+    version: "1.0.0+3"
   vector_math:
     dependency: transitive
     description:
