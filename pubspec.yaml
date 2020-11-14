@@ -1,9 +1,9 @@
 name: unicons
-description: 1000+ vector icons as easy to use in your Flutter project
+description: 1000+ beautiful icons to use in you dream project, with all the customization Flutter provides
 # author: Pedro Lemos <lemozxpedro@gmail.com>
 homepage: https://github.com/pedrolemoz/unicons-flutter
 
-version: 1.0.0+4
+version: 1.0.0+5
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

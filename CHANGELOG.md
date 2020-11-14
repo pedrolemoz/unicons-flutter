@@ -1,3 +1,7 @@
+# 1.0.0+5
+
+- Updated package to suit pub.dev specifications
+
 # 1.0.0+4
 
 - Minor changes
