@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   
-  unicons:
+  unicons: any
 
 dev_dependencies:
 

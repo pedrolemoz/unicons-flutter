@@ -16,7 +16,6 @@ dev_dependencies:
   effective_dart:
 
 flutter:
-  uses-material-design: true
   fonts:
     - family: UniconsLine
       fonts:

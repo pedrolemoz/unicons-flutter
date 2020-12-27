@@ -20,7 +20,7 @@ Add the dependency to your `pubspec.yaml`
 
 ```yaml
 dependencies:
-  unicons: # Keep this blank to use the latest version
+  unicons: any
 ```
 
 ## Usage

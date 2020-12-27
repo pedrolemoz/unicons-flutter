@@ -1,3 +1,7 @@
+# 1.0.1
+
+- Removed conflicting diretives from pubspec
+
 # 1.0.0+5
 
 - Updated package to suit pub.dev specifications
