@@ -1,3 +1,7 @@
+# 1.0.2
+
+- Added Null Safety support
+
 # 1.0.1
 
 - Removed conflicting diretives from pubspec
