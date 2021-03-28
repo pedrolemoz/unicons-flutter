@@ -3,7 +3,7 @@ description: 1000+ beautiful icons to use in you dream project, with all the cus
 # author: Pedro Lemos <lemozxpedro@gmail.com>
 homepage: https://github.com/pedrolemoz/unicons-flutter
 
-version: 1.0.2
+version: 2.0.0
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
