@@ -1,3 +1,6 @@
+# 2.0.1
+
+- Changed example SDK version to enable null safety, minor changes in README
 # 2.0.0
 
 - Added Null Safety support
