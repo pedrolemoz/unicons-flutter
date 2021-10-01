@@ -4747,4 +4747,8 @@ class UniconsLine {
   ///
   static const arrow_from_right =
       IconData(0xeca1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+
+  ///
+  static const list_ol =
+      IconData(0xecbf, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
