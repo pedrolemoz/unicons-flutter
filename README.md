@@ -18,19 +18,12 @@ A Flutter library for [Unicons](https://iconscout.com/unicons).
 
 Add the dependency to your `pubspec.yaml` file.
 
-If your project has null safety enabled, you can use the latest version:
-
 ```yaml
 dependencies:
-  unicons: ^2.0.1
+  unicons: any
 ```
 
-If your project does not use null safety, you should use the following version:
-
-```yaml
-dependencies:
-  unicons: 1.0.1
-```
+We recommend `flutter pub upgrade` to always stay updated with the latest release.
 
 ## Usage
 
