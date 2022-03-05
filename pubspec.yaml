@@ -3,7 +3,7 @@ description: 1000+ beautiful icons to use in you dream project, with all the cus
 # author: Pedro Lemos <lemozxpedro@gmail.com>
 homepage: https://github.com/pedrolemoz/unicons-flutter
 
-version: 2.0.2
+version: 2.1.0
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -13,14 +13,18 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
-  effective_dart:
+  effective_dart: ^1.3.2
 
 flutter:
   fonts:
     - family: UniconsLine
       fonts:
-      - asset:  icons/UniconsLine.ttf
+        - asset: icons/UniconsLine.ttf
     
     - family: UniconsSolid
       fonts:
-      - asset:  icons/UniconsSolid.ttf
+        - asset: icons/UniconsSolid.ttf
+
+    - family: UniconsThinline
+      fonts:
+        - asset: icons/UniconsThinline.ttf

@@ -12,9 +12,10 @@ dependencies:
   flutter:
     sdk: flutter
   
-  unicons: any
+  unicons:
+    path: ../
 
-dev_dependencies:
+# dev_dependencies:
 
 flutter:
   uses-material-design: true
