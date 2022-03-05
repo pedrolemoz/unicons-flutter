@@ -19,7 +19,7 @@ class UniconsThinline {
   UniconsThinline._();
 
   static const _kFontFam = 'UniconsThinline';
-  static const String? _kFontPkg = null;
+  static const String? _kFontPkg = 'unicons';
 
   static const IconData adobe_alt =
       IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);

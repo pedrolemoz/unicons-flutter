@@ -19,7 +19,7 @@ class UniconsLine {
   UniconsLine._();
 
   static const _kFontFam = 'UniconsLine';
-  static const String? _kFontPkg = null;
+  static const String? _kFontPkg = 'unicons';
 
   static const IconData zero_plus =
       IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
