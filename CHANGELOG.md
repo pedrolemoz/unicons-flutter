@@ -1,3 +1,9 @@
+# 2.1.0
+
+- Added UniconsThinline [(PR here)](https://github.com/pedrolemoz/unicons-flutter/pull/7)
+- Updated package to the v4.0.1 of Unicons
+
+
 # 2.0.2
 
 - Added list_ol icon [(PR here)](https://github.com/pedrolemoz/unicons-flutter/pull/6)
