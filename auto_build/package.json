@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "generate_configs": "node src/generate_configs/generate_configs.js",
-    "rename_outputs": "node src/rename_outputs/rename_outputs.js"
+    "rename_outputs": "node src/rename_outputs/rename_outputs.js",
+    "update_pubspec": "node src/update_pubspec/update_pubspec.js",
+    "update_changelog": "node src/update_changelog/update_changelog.js"
   },
   "author": "Pedro Lemos",
   "license": "ISC",
