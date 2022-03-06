@@ -42,6 +42,7 @@ jobs:
         if: always()
         run: |
           cd auto_build
+          cd output
           npx fontello-cli --config unicons_line_config.json --host https://www.fluttericon.com/ install
           npx fontello-cli --config unicons_line_config.json --host https://www.fluttericon.com/ install
           rm .fontello-session
@@ -50,6 +51,7 @@ jobs:
         if: always()
         run: |
           cd auto_build
+          cd output
           npx fontello-cli --config unicons_solid_config.json --host https://www.fluttericon.com/ install
           npx fontello-cli --config unicons_solid_config.json --host https://www.fluttericon.com/ install
           rm .fontello-session
@@ -58,6 +60,7 @@ jobs:
         if: always()
         run: |
           cd auto_build
+          cd output
           npx fontello-cli --config unicons_thinline_config.json --host https://www.fluttericon.com/ install
           npx fontello-cli --config unicons_thinline_config.json --host https://www.fluttericon.com/ install
           rm .fontello-session
