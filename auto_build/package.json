@@ -4,7 +4,8 @@
   "description": "An auto build for Unicons",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "generate_configs": "node src/generate_configs.js",
+    "rename_outputs": "node src/rename_outputs.js"
   },
   "author": "Pedro Lemos",
   "license": "ISC",

@@ -17,10 +17,20 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-        
+      
+      - name: Configure SSH key
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "Pedro Lemos"
+          git config --global user.email "lemozxpedro@gmail.com"
+
       - name: Configure auto_build
         run: |
-          cd auto_build 
+          cd auto_build
           npm install
           npm install -g fontello-cli
 
@@ -36,7 +46,7 @@ jobs:
       - name: Generate config files for each style
         run: |
           cd auto_build
-          npm start
+          npm run generate_configs
 
       - name: Workaround to make fontello-cli work properly
         if: always()
@@ -77,3 +87,89 @@ jobs:
           npx fontello-cli --config unicons_thinline_config.json --host https://www.fluttericon.com/ install
           rm .fontello-session
           set -e
+
+      - name: Rename all folders to the respective style
+        run: |
+          cd auto_build
+          npm run rename_outputs
+
+      - name: Move line icons ttf file
+        run: |
+          pwd
+          ls
+          cd auto_build
+          cd output
+          cd unicons_line_icons
+          cd fonts
+          mv *.ttf /home/runner/work/unicons-flutter/unicons-flutter/icons/
+      
+      - name: Move line icons Dart file
+        run: |
+          cd auto_build
+          cd output
+          cd unicons_line_icons
+          mv *.dart unicons_line.dart
+          mv *.dart /home/runner/work/unicons-flutter/unicons-flutter/lib/src/
+
+      - name: Move line icons config file
+        run: |
+          cd auto_build
+          cd output
+          cd unicons_line_icons
+          mv *.json unicons_line_config.json
+          mv *.json /home/runner/work/unicons-flutter/unicons-flutter/config/
+
+      - name: Move solid icons ttf file
+        run: |
+          cd auto_build
+          cd output
+          cd unicons_solid_icons
+          cd fonts
+          mv *.ttf /home/runner/work/unicons-flutter/unicons-flutter/icons/
+      
+      - name: Move solid icons Dart file
+        run: |
+          cd auto_build
+          cd output
+          cd unicons_solid_icons
+          mv *.dart unicons_solid.dart
+          mv *.dart /home/runner/work/unicons-flutter/unicons-flutter/lib/src/
+
+      - name: Move solid icons config file
+        run: |
+          cd auto_build
+          cd output
+          cd unicons_solid_icons
+          mv *.json unicons_solid_config.json
+          mv *.json /home/runner/work/unicons-flutter/unicons-flutter/config/
+
+      - name: Move thinline icons ttf file
+        run: |
+          cd auto_build
+          cd output
+          cd unicons_thinline_icons
+          cd fonts
+          mv *.ttf /home/runner/work/unicons-flutter/unicons-flutter/icons/
+      
+      - name: Move thinline icons Dart file
+        run: |
+          cd auto_build
+          cd output
+          cd unicons_thinline_icons
+          mv *.dart unicons_thinline.dart
+          mv *.dart /home/runner/work/unicons-flutter/unicons-flutter/lib/src/
+
+      - name: Move thinline icons config file
+        run: |
+          cd auto_build
+          cd output
+          cd unicons_thinline_icons
+          mv *.json unicons_thinline_config.json
+          mv *.json /home/runner/work/unicons-flutter/unicons-flutter/config/
+
+      - name: Create test branch
+        run: |
+          git checkout -b ci_cd_testing_branch
+          git add .
+          git commit -m "ci/cd: automated build"
+          git push origin ci_cd_testing_branch
