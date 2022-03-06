@@ -26,13 +26,12 @@ jobs:
 
       - name: Obtain all SVG files from Unicons
         run: |
-          ls
+          cd auto_build
           cd scripts
           sh get_line_icons_in_svg.sh
           cd ..
           cd scripts
           sh rename_line_icons.sh
-          cd ..
       
       - name: Generate config files for each style
         run: |
