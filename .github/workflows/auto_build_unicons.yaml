@@ -38,12 +38,21 @@ jobs:
           cd auto_build
           npm start
 
+      - name: Will this job fail?
+        if: always()
+        run: |
+          cd auto_build
+          cd output
+          set +e
+          npx fontello-cli --config unicons_line_config.json --host https://www.fluttericon.com/ install
+          rm .fontello-session
+          set -e
+
       - name: Generate ttf font and Dart class for UniconsLine
         if: always()
         run: |
           cd auto_build
           cd output
-          npx fontello-cli --config unicons_line_config.json --host https://www.fluttericon.com/ install
           npx fontello-cli --config unicons_line_config.json --host https://www.fluttericon.com/ install
           rm .fontello-session
 
@@ -53,7 +62,6 @@ jobs:
           cd auto_build
           cd output
           npx fontello-cli --config unicons_solid_config.json --host https://www.fluttericon.com/ install
-          npx fontello-cli --config unicons_solid_config.json --host https://www.fluttericon.com/ install
           rm .fontello-session
 
       - name: Generate ttf font and Dart class for UniconsThinline
@@ -61,6 +69,5 @@ jobs:
         run: |
           cd auto_build
           cd output
-          npx fontello-cli --config unicons_thinline_config.json --host https://www.fluttericon.com/ install
           npx fontello-cli --config unicons_thinline_config.json --host https://www.fluttericon.com/ install
           rm .fontello-session
