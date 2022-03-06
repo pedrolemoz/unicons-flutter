@@ -1,0 +1,17 @@
+{
+  "name": "unicons_build",
+  "version": "1.0.0",
+  "description": "An auto build for Unicons",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Pedro Lemos",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.3.2",
+    "parse-svg-path": "^0.1.2",
+    "scale-svg-path": "0.0.1",
+    "serialize-svg-path": "^0.1.0"
+  }
+}
