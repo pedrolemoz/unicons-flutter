@@ -7,17 +7,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-          contents: write
+      contents: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      
+
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
-      
+          node-version: "14"
+
       - name: Configure SSH key
         uses: webfactory/ssh-agent@v0.5.4
         with:
@@ -42,7 +42,7 @@ jobs:
           cd ..
           cd scripts
           sh rename_line_icons.sh
-      
+
       - name: Generate config files for each style
         run: |
           cd auto_build
@@ -102,7 +102,7 @@ jobs:
           cd unicons_line_icons
           cd fonts
           mv *.ttf /home/runner/work/unicons-flutter/unicons-flutter/icons/
-      
+
       - name: Move line icons Dart file
         run: |
           cd auto_build
@@ -126,7 +126,7 @@ jobs:
           cd unicons_solid_icons
           cd fonts
           mv *.ttf /home/runner/work/unicons-flutter/unicons-flutter/icons/
-      
+
       - name: Move solid icons Dart file
         run: |
           cd auto_build
@@ -150,7 +150,7 @@ jobs:
           cd unicons_thinline_icons
           cd fonts
           mv *.ttf /home/runner/work/unicons-flutter/unicons-flutter/icons/
-      
+
       - name: Move thinline icons Dart file
         run: |
           cd auto_build
@@ -167,9 +167,29 @@ jobs:
           mv *.json unicons_thinline_config.json
           mv *.json /home/runner/work/unicons-flutter/unicons-flutter/config/
 
+      - name: Update pubspec.yaml
+        run: |
+          cd auto_build
+          npm run update_pubspec
+
+      - name: Update CHANGELOG.md
+        run: |
+          cd auto_build
+          npm run update_changelog
+
       - name: Create test branch
         run: |
           git checkout -b ci_cd_testing_branch
+          cd lib
           git add .
+          cd ..
+          cd icons
+          git add .
+          cd ..
+          cd config
+          git add .
+          cd ..
+          git add pubspec.yaml
+          git add CHANGELOG.md
           git commit -m "ci/cd: automated build"
           git push origin ci_cd_testing_branch
