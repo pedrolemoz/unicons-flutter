@@ -76,7 +76,7 @@ function createUniconsSolidJSON(glyphs) {
         'glyphs': glyphs
     }
 
-    fs.writeFileSync(uniconsThinlineConfigPath, JSON.stringify(config))
+    fs.writeFileSync(uniconsSolidConfigPath, JSON.stringify(config))
 }
 
 function createUniconsThinlineJSON(glyphs) {
@@ -90,7 +90,7 @@ function createUniconsThinlineJSON(glyphs) {
         'glyphs': glyphs
     }
 
-    fs.writeFileSync(uniconsSolidConfigPath, JSON.stringify(config))
+    fs.writeFileSync(uniconsThinlineConfigPath, JSON.stringify(config))
 }
 
 
