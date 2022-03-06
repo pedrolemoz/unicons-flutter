@@ -3,7 +3,7 @@ const parse = require("parse-svg-path");
 const scale = require("scale-svg-path");
 const serialize = require("serialize-svg-path");
 const uuid = require("uuid/v4");
-const getFiles = require("./get_all_files_from_path");
+const getFiles = require("../common/get_all_files_from_path");
 const parseSvg = require("./parse_svg_data");
 
 module.exports = {
