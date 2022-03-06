@@ -35,6 +35,7 @@ jobs:
       
       - name: Generate config files for each style
         run: |
+          cd auto_build
           npm start
 
       
