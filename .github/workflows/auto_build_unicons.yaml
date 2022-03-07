@@ -182,9 +182,9 @@ jobs:
           cd auto_build
           npm run update_changelog
 
-      - name: Create test branch
+      - name: Create branch with updated icons
         run: |
-          git checkout -b generated_package_${{ github.run_id }}
+          git checkout -b build_${{ github.run_id }}
           cd lib
           git add .
           cd ..
@@ -196,5 +196,5 @@ jobs:
           cd ..
           git add pubspec.yaml
           git add CHANGELOG.md
-          git commit -m "ci/cd: generated icons with ${{ github.run_id }} workflow"
-          git push origin generated_package_${{ github.run_id }}
+          git commit -m "ci/cd: generated icons [${{ github.run_id }}]"
+          git push origin build_${{ github.run_id }}
