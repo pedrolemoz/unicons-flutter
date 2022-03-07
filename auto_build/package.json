@@ -6,6 +6,7 @@
   "scripts": {
     "generate_configs": "node src/generate_configs/generate_configs.js",
     "rename_outputs": "node src/rename_outputs/rename_outputs.js",
+    "adjust_generated_dart_files": "node src/adjust_generated_dart_files/adjust_generated_dart_files.js",
     "update_pubspec": "node src/update_pubspec/update_pubspec.js",
     "update_changelog": "node src/update_changelog/update_changelog.js"
   },

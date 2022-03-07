@@ -9,4 +9,9 @@ module.exports = {
     path.dirname(path.dirname(path.dirname(__dirname))),
     "CHANGELOG.md"
   ),
+  generatedDartFiles: path.join(
+    path.dirname(path.dirname(path.dirname(__dirname))),
+    "lib",
+    "src"
+  ),
 };
