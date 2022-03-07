@@ -167,6 +167,11 @@ jobs:
           mv *.json unicons_thinline_config.json
           mv *.json /home/runner/work/unicons-flutter/unicons-flutter/config/
 
+      - name: Adjusted generated Dart files
+        run: |
+          cd auto_build
+          npm run adjust_generated_dart_files
+
       - name: Update pubspec.yaml
         run: |
           cd auto_build
