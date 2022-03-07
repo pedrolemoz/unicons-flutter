@@ -184,7 +184,7 @@ jobs:
 
       - name: Create test branch
         run: |
-          git checkout -b ci_cd_testing_branch
+          git checkout -b generated_package_${{ github.run_id }}
           cd lib
           git add .
           cd ..
@@ -196,5 +196,5 @@ jobs:
           cd ..
           git add pubspec.yaml
           git add CHANGELOG.md
-          git commit -m "ci/cd: automated build"
-          git push origin ci_cd_testing_branch
+          git commit -m "ci/cd: generated icons with ${{ github.run_id }} workflow"
+          git push origin generated_package_${{ github.run_id }}
