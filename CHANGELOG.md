@@ -1,3 +1,7 @@
+# 2.1.1
+
+- Auto update of package in 2023-03-14 20:37:38.772
+
 # 2.1.0
 
 - Added UniconsThinline [(PR here)](https://github.com/pedrolemoz/unicons-flutter/pull/7)
