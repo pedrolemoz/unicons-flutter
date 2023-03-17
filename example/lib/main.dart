@@ -1,22 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:unicons/unicons.dart';
 
-void main() => runApp(UniconsExample());
+void main() => runApp(const UniconsExample());
 
 class UniconsExample extends StatelessWidget {
+  const UniconsExample({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.light().copyWith(primaryColor: Color(0xFF6666FF)),
+      theme: ThemeData.light().copyWith(
+        colorScheme: const ColorScheme.light(
+          primary: Color(0xFF6666FF),
+        ),
+      ),
       debugShowCheckedModeBanner: false,
       title: 'Unicons App',
-      home: IconsPage(),
+      home: const IconsPage(),
     );
   }
 }
 
 class IconsPage extends StatelessWidget {
-  final _iconsLine = [
+  static const _iconsLine = [
     UniconsLine.apps,
     UniconsLine.cog,
     UniconsLine.user,
@@ -67,23 +73,26 @@ class IconsPage extends StatelessWidget {
     UniconsLine.ninja,
   ];
 
+  const IconsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Unicons Line'),
+        title: const Text('Unicons Line'),
         centerTitle: true,
       ),
       body: GridView.builder(
         padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 30.0),
         shrinkWrap: true,
         itemCount: _iconsLine.length,
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 6),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 6,
+        ),
         itemBuilder: (context, index) => Icon(
           _iconsLine.elementAt(index),
           size: 50.0,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).colorScheme.primary,
         ),
       ),
     );

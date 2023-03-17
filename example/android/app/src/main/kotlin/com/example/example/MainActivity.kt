@@ -1,4 +1,4 @@
-package com.example.unicons_example
+package com.pedrolemoz.unicons_example
 
 import io.flutter.embedding.android.FlutterActivity
 
