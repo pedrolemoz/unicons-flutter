@@ -2365,57 +2365,59 @@ class UniconsLine {
   /// Auto-generated
   static const IconData whatsapp_alt = IconData(0xec99, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wheel_barrow = IconData(0xec9a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData whatsapp = IconData(0xec9a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wheelchair_alt = IconData(0xec9b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wheel_barrow = IconData(0xec9b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wheelchair = IconData(0xec9c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wheelchair_alt = IconData(0xec9c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wifi_router = IconData(0xec9d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wheelchair = IconData(0xec9d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wifi_slash = IconData(0xec9e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wifi_router = IconData(0xec9e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wifi = IconData(0xec9f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wifi_slash = IconData(0xec9f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wind_moon = IconData(0xeca0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wifi = IconData(0xeca0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wind_sun = IconData(0xeca1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wind_moon = IconData(0xeca1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wind = IconData(0xeca2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wind_sun = IconData(0xeca2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData window_grid = IconData(0xeca3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wind = IconData(0xeca3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData window_maximize = IconData(0xeca4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData window_grid = IconData(0xeca4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData window_section = IconData(0xeca5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData window_maximize = IconData(0xeca5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData window = IconData(0xeca6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData window_section = IconData(0xeca6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData windows = IconData(0xeca7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData window = IconData(0xeca7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData windsock = IconData(0xeca8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData windows = IconData(0xeca8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData windy = IconData(0xeca9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData windsock = IconData(0xeca9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wordpress_simple = IconData(0xecaa, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData windy = IconData(0xecaa, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wordpress = IconData(0xecab, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wordpress_simple = IconData(0xecab, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wrap_text = IconData(0xecac, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wordpress = IconData(0xecac, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData wrench = IconData(0xecad, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wrap_text = IconData(0xecad, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData x_add = IconData(0xecae, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wrench = IconData(0xecae, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData x = IconData(0xecaf, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData x_add = IconData(0xecaf, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData yen_circle = IconData(0xecb0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData x = IconData(0xecb0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData yen = IconData(0xecb1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData yen_circle = IconData(0xecb1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData yin_yang = IconData(0xecb2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData yen = IconData(0xecb2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData youtube = IconData(0xecb3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData yin_yang = IconData(0xecb3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   /// Auto-generated
-  static const IconData zero_plus = IconData(0xecb4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData youtube = IconData(0xecb4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  /// Auto-generated
+  static const IconData zero_plus = IconData(0xecb5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
