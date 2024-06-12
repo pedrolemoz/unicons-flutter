@@ -182,6 +182,11 @@ jobs:
           cd auto_build
           npm run update_changelog
 
+      - name: Remove temporary files
+        run: |
+          cd auto_build
+          rm -rf unicons
+
       - name: Create branch with updated icons
         run: |
           git checkout -b build_${{ github.run_id }}
