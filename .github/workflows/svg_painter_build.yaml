@@ -1,0 +1,75 @@
+name: Generate Unicons Flutter
+
+on:
+  workflow_dispatch:
+
+jobs:
+  generate-icons:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout unicons-flutter repository
+      uses: actions/checkout@v3
+      with:
+        repository: pedrolemoz/unicons-flutter
+        ref: master
+
+    - name: Fetch latest CLI release
+      run: |
+        CLI_URL=$(curl -s https://api.github.com/repos/pedrolemoz/svg_painter/releases/latest | jq -r '.assets[0].browser_download_url')
+        curl -L -o cli $CLI_URL
+        chmod +x cli
+
+    - name: Clone Unicons SVG repository
+      run: |
+        git clone --depth 1 --filter=blob:none --sparse https://github.com/Iconscout/unicons.git
+        cd unicons
+        git sparse-checkout set svg/line
+        cd ..
+
+    - name: Rename SVG files
+      run: |
+        cd unicons/svg/line
+        for file in [0-9]*.svg; do
+          case ${file%%-*} in
+            0) new_name="zero${file#?}";;
+            1) new_name="one${file#?}";;
+            2) new_name="two${file#?}";;
+            3) new_name="three${file#?}";;
+            4) new_name="four${file#?}";;
+            5) new_name="five${file#?}";;
+            6) new_name="six${file#?}";;
+            7) new_name="seven${file#?}";;
+            8) new_name="eight${file#?}";;
+            9) new_name="nine${file#?}";;
+            10) new_name="ten${file#??}";;
+            11) new_name="eleven${file#??}";;
+            12) new_name="twelve${file#??}";;
+            13) new_name="thirteen${file#??}";;
+            14) new_name="fourteen${file#??}";;
+            15) new_name="fifteen${file#??}";;
+            16) new_name="sixteen${file#??}";;
+            17) new_name="seventeen${file#??}";;
+            18) new_name="eighteen${file#??}";;
+            19) new_name="nineteen${file#??}";;
+            20) new_name="twenty${file#??}";;
+            21) new_name="twenty-one${file#??}";;
+            500) new_name="five-hundred${file#???}";;
+          esac
+          mv "$file" "$new_name"
+        done
+        cd ../../../
+
+    - name: Run CLI
+      run: |
+        mkdir -p lib/icons
+        ./cli -s unicons/svg/line -o lib/icons -w Icon
+
+    - name: Commit and push changes
+      run: |
+        git checkout -b build_${{ github.run_id }}
+        git config --global user.name "Pedro Lemos"
+        git config --global user.email "lemozxpedro@gmail.com"
+        git add lib/icons
+        git commit -m "ci/cd: generated icons [${{ github.run_id }}]"
+        git push origin build_${{ github.run_id }}
