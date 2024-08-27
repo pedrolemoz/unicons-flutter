@@ -33,23 +33,19 @@ class IconsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Unicons Line'),
+        title: const Text('Unicons Line (Custom Painter)'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: uniconsLine
-              .map(
-                (icon) => SizedBox(
-                  width: 50,
-                  height: 50,
-                  child: icon,
-                ),
-              )
-              .toList(),
-        ),
+      body: GridView.builder(
+        padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 30.0),
+        shrinkWrap: true,
+        itemCount: uniconsLine.length,
+        gridDelegate:
+            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 6),
+        itemBuilder: (context, index) {
+          final icon = uniconsLine[index];
+          return Padding(padding: const EdgeInsets.all(8), child: icon);
+        },
       ),
     );
   }
