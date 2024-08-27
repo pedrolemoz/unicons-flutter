@@ -1,7 +1,7 @@
 # Unicons
 
 <div>
-  <img src="https://i.imgur.com/pwnKyk3.png" width=350px>
+  <img src="https://github.com/user-attachments/assets/24d6fb58-356e-49f3-8a8e-68f82073d40e" width=350px>
 </div>
 
 A Flutter library for [Unicons](https://iconscout.com/unicons).
