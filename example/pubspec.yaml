@@ -1,21 +1,21 @@
-name: unicons_example
+name: example
 description: An example for unicons package
-
 publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
+  sdk: ^3.5.0
 
 dependencies:
   flutter:
     sdk: flutter
-  
+
   unicons:
     path: ../
 
-# dev_dependencies:
+dev_dependencies:
+  flutter_lints: ^4.0.0
 
 flutter:
   uses-material-design: true

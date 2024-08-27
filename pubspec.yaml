@@ -3,17 +3,17 @@ description: 1000+ beautiful icons to use in you dream project, with all the cus
 # author: Pedro Lemos <lemozxpedro@gmail.com>
 homepage: https://github.com/pedrolemoz/unicons-flutter
 
-version: 2.1.2
+version: 3.0.0
 
 environment:
-  sdk: ">=2.12.0 <4.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
 dev_dependencies:
-  effective_dart: ^1.3.2
+  flutter_lints: ^4.0.0
 
 flutter:
   fonts:
