@@ -1,5 +1,7 @@
-# 2.1.3
+# 3.0.0
 
+- Introduced icons as Widgets for Unicons Line
+- Updated example for Unicons
 - Auto update of package in 2024-08-26 23:16:11.674
 
 # 2.1.2
